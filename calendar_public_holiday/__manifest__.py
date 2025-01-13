@@ -19,10 +19,12 @@
     "Camptocamp,",
     "website": "https://github.com/OCA/calendar",
     "depends": ["calendar"],
+    "external_dependencies": {"python": ["openupgradelib"]},
     "data": [
         "data/data.xml",
         "security/ir.model.access.csv",
         "views/calendar_public_holiday_view.xml",
         "wizards/calendar_public_holiday_next_year_wizard.xml",
     ],
+    "pre_init_hook": "pre_init_hook",
 }
