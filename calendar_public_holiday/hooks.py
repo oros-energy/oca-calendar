@@ -35,6 +35,13 @@ def migrate_rename_model_hr_holidays_public_line(env):
     openupgrade.rename_models(env.cr, model_renames)
     tables_renames = [("hr_holidays_public_line", "calendar_public_holiday_line")]
     openupgrade.rename_tables(env.cr, tables_renames)
+    # Rename Many2many relation
+    tables_renames = [("hr_holiday_public_state_rel", "public_holiday_state_rel")]
+    openupgrade.rename_tables(env.cr, tables_renames)
+    column_renames = {
+        "public_holiday_state_rel": [("line_id", "public_holiday_line_id")],
+    }
+    openupgrade.rename_columns(env.cr, column_renames)
 
 
 def migrate_rename_model_hr_holidays_public(env):
