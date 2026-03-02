@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -226,6 +226,20 @@ msgstr ""
 msgid ""
 "Year for which you want to create the public holidays. By default, the year "
 "following the template."
+msgstr ""
+
+#. module: calendar_public_holiday
+#. odoo-python
+#: code:addons/calendar_public_holiday/models/calendar_public_holiday_line.py:0
+msgid ""
+"You can't create duplicate public holiday per date %s and one of the country"
+" states."
+msgstr ""
+
+#. module: calendar_public_holiday
+#. odoo-python
+#: code:addons/calendar_public_holiday/models/calendar_public_holiday_line.py:0
+msgid "You can't create duplicate public holiday per date %s."
 msgstr ""
 
 #. module: calendar_public_holiday
