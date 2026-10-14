@@ -13,6 +13,9 @@ from odoo.addons.base.tests.common import BaseCommon
 
 
 class TestCalendarPublicHoliday(BaseCommon):
+    # Run as superuser, the tests manage holidays and calendar events
+    _test_user_groups = ()
+
     @classmethod
     def setUpClass(cls):
         super().setUpClass()

@@ -5,10 +5,8 @@
 
 {
     "name": "Calendar Holidays Public",
-    "summary": """
-        Manage Public Holidays
-    """,
-    "version": "19.0.1.0.0",
+    "summary": "Manage Public Holidays",
+    "version": "20.0.1.0.0",
     "license": "AGPL-3",
     "category": "HR/Calendar",
     "author": "Michael Telahun Makonnen, "
@@ -22,7 +20,7 @@
     "external_dependencies": {"python": ["openupgradelib"]},
     "data": [
         "data/data.xml",
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "views/calendar_public_holiday_view.xml",
         "wizards/calendar_public_holiday_next_year_wizard.xml",
     ],
