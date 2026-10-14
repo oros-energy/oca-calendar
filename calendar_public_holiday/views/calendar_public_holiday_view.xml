@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!-- Copyright 2024 Camptocamp
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 <odoo>
@@ -58,8 +58,8 @@
         sequence="60"
     />
     <menuitem
-        action="open_calendar_public_holiday_view"
         id="menu_calendar_public_holiday_view"
+        action="open_calendar_public_holiday_view"
         parent="menu_calendar_public_holiday"
         sequence="61"
     />
